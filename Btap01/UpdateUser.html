@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Update User Preferences</title>
+    <link rel="stylesheet" type="text/css" href="preferenceStyle.css" />
+</head>
+
+<body>
+    <form action="done.html" method="POST">
+        <div id="header">
+            Update User Preferences
+        </div><br/>
+
+        <div id="content">
+            <div class="title">Page Size*</div>
+            <div class="sub-content">
+                <input name="page_size" type="text" width="" />
+                <br/>Number of Issues displayed per Issues Navigator page
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">Email Type</div>
+            <div class="sub-content">
+                <select name="email_type">
+                    <option>HTML</option>
+                    <option>MYSQL</option>
+                </select>
+                <br/>Email Type Format
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">Language</div>
+            <div class="sub-content">
+                <select name="language">
+                    <option selected = "selected">English (United States)</option>
+                    <option>Vietnamese</option>
+                    <option>Chinese</option>
+                </select>
+            </div>
+        </div>
+        <br/>
+
+        <div id="content">
+            <div class="title">Time Zone</div>
+            <div class="sub-content">
+                <select name="time_zone">
+                    <option>Australia</option>
+                    <option>Vietnam</option>
+                    <option>China</option>
+                </select>
+                <div>
+                    <select name="hours">
+                    <option>[GMT+10:00]Sydney</option>
+                    <option>[GMT+07:00]Hanoi</option>
+                    <option>[GMT+08:00]Beijing</option>
+                </select>
+                </div>
+                The time zone used when showing date time information
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">My Changes</div>
+            <div class="sub-content">
+                <select name="my_changes">
+                    <option selected = "selected">Do not notify me</option>
+                    <option>Please notify me</option>
+                </select>
+                <br/>Whether to email notifications of any changes you make
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">Sharing</div>
+            <div class="sub-content">
+                <select name="sharing">
+                    <option selected = "selected">Unshared</option>
+                    <option>Shared</option>
+                </select>
+                <br/>Whether to share Filters & Dashboard by default.
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">Keyboard Shortcut</div>
+            <div class="sub-content">
+                <select name="keyboard_shortcut">
+                    <option selected = "selected">Enabled</option>
+                    <option>Disabled</option>
+                </select>
+                <br/>Whether all Keyboard shortcut will work.
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <div id="content">
+            <div class="title">Autowatch</div>
+            <div class="sub-content">
+                <select name="auto_watch">
+                    <option selected = "selected">Inherit form global settings</option>
+                </select>
+                <br/>Issues that you create or comment on will automatically be<br/> watched for future changes
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="button">
+            <input name="btn_update" type="submit" value="Update" />
+            <input name="btn_cancel" type="button" value="Cancel" />
+        </div>
+
+        <div class="clear"></div>
+    </form>
+</body>
+
+</html>
